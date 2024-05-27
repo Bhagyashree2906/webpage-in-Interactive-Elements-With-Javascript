@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, blue, purple);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+ }
+ .glass {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    width: 80%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+ .glass h1, .glass h2, .glass p {
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+ }
+ .glass button {
+    padding: 10px 20px;
+    border: none;
+    border-radius:10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);  
+ }
+ /* for mobile  */
+ @media only screen and (min-width: 320px) and (max-width: 767px)
+ {
+ body {
+    background: linear-gradient(to right, #b7ff00, purple);
+    .glass h1,.glass h2,.glass p{
+       color: black;
+    }
+ 
+ }
+ }
+ /* for tablet */
+ @media only screen and (min-width: 768px) and (max-width: 1023px)
+ {
+ body {
+    background: linear-gradient(to right, #00a6ff, rgb(228, 99, 228));
+    .glass button{
+       color: darkred;
+    }
+ 
+ }
+ }
+ /* for laptop */
+ @media only screen and (min-width: 1024px) 
+ {
+ body {
+    background: linear-gradient(to right, #01a380, rgb(154, 3, 83));
+ 
+ }
+ }

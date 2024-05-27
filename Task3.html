@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Webpage</title>
+    <link rel="stylesheet" type="text/css" href="Task3.css">
+    <script>
+        function validateForm() {
+      var name = document.forms["form"]["name"].value;
+      var name = document.forms["form"]["email"].value;
+      
+      if (name === "" || email === "") 
+        alert("Name and email are required!");
+        return false;
+      
+    }
+    </script>
+</head>
+<body>
+    <div class="glass">
+        <h1>Welcome to My Webpage</h1>
+        <div>
+            <button>Home</button>
+            <button>About</button>
+            <button>Contact</button>
+        </div>
+        <div>
+            <h2>Form</h2>
+            <form name="form"onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text"id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email"id="email" name="email"><br><br>
+                <select id="menu">
+                    <option value="">Select a Course</option>
+                    <option value="1">Web Developement</option>
+                    <option value="2">Data Analytics</option>
+                    <option value="3">Java</option>
+                    <option value="4">Python</option>
+                </select><br><br>
+                <input type="Submit" value="Submit">   
+            </form><br>
+        </div>
+        <div>
+            <h2>About Me:</h2>
+            <p>Hello, My name is Bhagyashree Behera and I am a web Developer.</p>
+        </div>
+        <div>
+            <h2>Contact Me:</h2>
+            <p>Email: bhagyashreeb.2906@gmail.com</p>
+            <p>Phone: 8144124161</p>
+        </div>
+    </div>
+</body>
+</html>
